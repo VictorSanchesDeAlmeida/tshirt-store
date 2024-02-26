@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.car-false{
+    transform: translateX(100%);
+    transition: 0.5s ease;
+}
+
+.car-true{
+    transform: translateX(0);
+    transition: 0.5s ease;
+}

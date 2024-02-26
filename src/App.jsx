@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Catalog from './components/Catalog'
 import Header from './components/Header'
 import Carrinho from './components/Carrinho'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <>
+      <SpeedInsights/>
       <Header toggleCarrinho={toggleCarrinho}/>
       <Carrinho car={car} addToCarrinho={addToCarrinho} removeToCarrinho={removeToCarrinho} toggleCarrinho={toggleCarrinho} activeCar={activeCar}/>
       <Catalog addToCarrinho={addToCarrinho}/>
